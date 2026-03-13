@@ -1,5 +1,5 @@
 {% set name = "tardigrade_hydra" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/UCBoulder/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: b9641e0cb84d3be9b1b71df4f95c2404ecdd38a991a321b7f5bc991d241e690d
+  sha256: 3f016601e81166e0888ae6d0850a27a0c3e46832b09cd23231b698bd7aba209f
 
 build:
   number: 0
