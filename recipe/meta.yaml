@@ -1,5 +1,5 @@
 {% set name = "tardigrade_hydra" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/UCBoulder/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: cbcaf8a903a9890cb9e8ebbc745e509a8c39ee1a336f3c02b0f572cca8a4cdef
+  sha256: 6fda27caccfed3f79e1f7aac12d314f94d8546fa9e2c87209a00e18c4be1a4f5
 
 build:
   number: 0
@@ -46,6 +46,7 @@ requirements:
     - setuptools >=77
     - setuptools_scm >=8
     - eigen >=3.3.7
+    - eigen-abi-devel
     - tardigrade_error_tools >=0.9.8
     - tardigrade_vector_tools >=0.8.7
     - tardigrade_constitutive_tools >=0.8.5
@@ -53,11 +54,6 @@ requirements:
     - tardigrade_micromorphic_tools >=1.4.3
   run:
     - eigen >=3.3.7
-    - tardigrade_error_tools >=0.9.8
-    - tardigrade_vector_tools >=0.8.7
-    - tardigrade_constitutive_tools >=0.8.5
-    - tardigrade_stress_tools >=0.6.3
-    - tardigrade_micromorphic_tools >=1.4.3
 
 test:
   requires:
