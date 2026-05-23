@@ -1,5 +1,5 @@
 {% set name = "tardigrade_hydra" %}
-{% set version = "0.8.5" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/UCBoulder/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 747efeb1fd3524c38d1b99ecc81aebc84bac719c3498dbf1191003a781b0dd08
+  sha256: cfa5a4f94d61bac0c0cbeeac587eb20c7e53c600b1200a4b124df2b4fa85d412
 
 build:
   number: 0
@@ -77,7 +77,7 @@ about:
   home: https://github.com/UCBoulder/tardigrade_hydra
   license: BSD-3-Clause
   license_file: LICENSE
-  summary:  'Tools for building material response models'
+  summary: 'Tools for building material response models'
   description: |
     tardigrade_hydra Tools for creating material response models as a function of incoming
     degrees of freedom. The different physical behaviors are designed so that they can be
